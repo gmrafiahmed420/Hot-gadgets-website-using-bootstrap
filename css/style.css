@@ -1,0 +1,165 @@
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+#header_area .bg-1 {
+    width: 180px;
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+}
+
+section {
+    margin: 200px 0px;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 15px;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+.buy-now-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 8px;
+    border: 0px;
+    border-radius: 10px;
+    opacity: 1;
+    background-color: lightgray;
+
+}
+
+.carousel-indicators button.active {
+    width: 30px;
+    background: linear-gradient(to left, rgb(248, 211, 1) 0%, rgb(255, 160, 8)100%);
+}
+
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -70px;
+}
+
+.card {
+    padding: 40px;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.card-2 {
+    padding: 30px;
+    box-shadow: 3px 3px 10px rgb(233, 233, 233);
+    border-radius: 10px;
+}
+
+.pricing {
+    margin: 20px;
+}
+
+.orang-text {
+    color: rgb(255, 160, 8);
+    cursor: pointer;
+}
+
+.cat-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+
+}
+
+.cat-heading::after {
+    width: 10%;
+    height: 20%;
+    margin: auto;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: linear-gradient(to left, rgb(255, 160, 8) 0%, rgb(248, 211, 1) 100%);
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 0px;
+        top: 90px;
+        z-index: 1000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+        position: absolute;
+        left: -100px;
+        top: 40px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .card-2 {
+        width: 150px;
+        padding: 25px;
+    }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+    .card {
+        margin: 10px 0px 0px 20px;
+    }
+
+    .product-heading {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-2 {
+        width: 100px;
+        padding: 20px;
+    }
+
+    .cat-heading::after {
+        width: 20%;
+    }
+
+
+}
